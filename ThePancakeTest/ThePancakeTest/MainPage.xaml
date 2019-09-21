@@ -1,0 +1,823 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:abstractions="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin"
+             x:Class="ThePancakeTest.MainPage"
+             BackgroundColor="White"
+             >
+    <ScrollView >
+        <Grid Margin="20"  RowSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+
+            </Grid.ColumnDefinitions>
+
+
+
+            <yummy:PancakeView 
+        BorderIsDashed="True"
+        Grid.Row="0"
+        BorderThickness="4" 
+        CornerRadius="0,30,30,0"
+        BackgroundColor="Black"
+        HorizontalOptions="FillAndExpand" 
+        HeightRequest="140">
+                <Image Source="thencisteam.jpg"></Image>
+
+            </yummy:PancakeView>
+
+            <yummy:PancakeView 
+                Grid.Row="1"
+        BorderIsDashed="True"
+        BorderThickness="1" 
+        CornerRadius="0,30,30,0"
+        HorizontalOptions="FillAndExpand" 
+        HeightRequest="140">
+                <Grid Grid.Row="0" BackgroundColor="#81c4f1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <abstractions:CircleImage 
+                       
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Grid.RowSpan="3"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand"
+                        Source="NCISLeroyJethroGibbs.jpg"
+                        WidthRequest="100" 
+                        HeightRequest="100" 
+                        Aspect="Fill" 
+                       
+                     
+                        />
+
+                    <StackLayout   Grid.Column="2"
+                                   Grid.Row="1" 
+                                   Grid.ColumnSpan="3"
+                                   HorizontalOptions="StartAndExpand" 
+                                   VerticalOptions="Center">
+                        <Label Text="NCIS Special Agent :" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                        <Label Text="Leroy Jethro Gibbs" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="5"
+                                 
+                                 Grid.RowSpan="2"
+                                 HorizontalOptions="Center"
+                                 Grid.Row="2">
+                        <Label Text="1"
+                               FontAttributes="Bold"
+                               FontSize="20"
+                               HorizontalOptions="CenterAndExpand" 
+                               TextColor="White" >
+
+                        </Label>
+                        <Label Text="Ranking" 
+                               FontSize="10"  
+                               HorizontalOptions="Center" 
+                               TextColor="White" >
+
+                        </Label>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="2"
+                                 Spacing="0"
+                                 
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="2000" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            Text="Popularity">
+
+                        </Label>
+
+                    </StackLayout>
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="3"
+                                 Spacing="0"
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="2000" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            HorizontalOptions="Center"
+                            Text="Likes">
+
+                        </Label>
+
+                    </StackLayout>
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="4"
+                                 Spacing="0"
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="200" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            Text="Followed">
+
+                        </Label>
+
+                    </StackLayout>
+
+                </Grid>
+
+            </yummy:PancakeView>
+
+
+
+
+
+            <yummy:PancakeView 
+                Grid.Row="2"
+        BorderIsDashed="True"
+        BorderThickness="4" 
+        CornerRadius="0,30,30,0"
+        HorizontalOptions="FillAndExpand" 
+        HeightRequest="140">
+                <Grid Grid.Row="0" BackgroundColor="#f2ae63">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <abstractions:CircleImage 
+                       
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Grid.RowSpan="3"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand"
+                        Source="Tonyanthontonydinozzo.jpg"
+                        WidthRequest="100" 
+                        HeightRequest="100" 
+                        Aspect="Fill" 
+                       
+                     
+                        />
+
+                    <StackLayout   Grid.Column="2"
+                                   Grid.Row="1" 
+                                   Grid.ColumnSpan="3"
+                                   HorizontalOptions="StartAndExpand" 
+                                   VerticalOptions="Center">
+                        <Label Text="NCIS Special Agent :" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                        <Label Text="Anthony DiNozzo" HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="White" />
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="5"
+                                 
+                                 Grid.RowSpan="2"
+                                 HorizontalOptions="Center"
+                                 Grid.Row="2">
+                        <Label Text="2"
+                               FontAttributes="Bold"
+                               FontSize="20"
+                               HorizontalOptions="CenterAndExpand" 
+                               TextColor="White" >
+
+                        </Label>
+                        <Label Text="Ranking" 
+                               FontSize="11"  
+                               HorizontalOptions="Center" 
+                               TextColor="White" >
+
+                        </Label>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="2"
+                                 Spacing="0"
+                                 
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="2100" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            Text="Popularity">
+
+                        </Label>
+
+                    </StackLayout>
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="3"
+                                 Spacing="0"
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="6000" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            HorizontalOptions="Center"
+                            Text="Likes">
+
+                        </Label>
+
+                    </StackLayout>
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="4"
+                                 Spacing="0"
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="1200" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            Text="Followed">
+
+                        </Label>
+
+                    </StackLayout>
+
+                </Grid>
+
+            </yummy:PancakeView>
+
+            <yummy:PancakeView 
+                Grid.Row="3"
+        BorderIsDashed="True"
+        BorderThickness="4" 
+        CornerRadius="0,30,30,0"
+        HorizontalOptions="FillAndExpand" 
+        HeightRequest="140">
+                <Grid Grid.Row="0" BackgroundColor="#ec6792">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <abstractions:CircleImage 
+                       
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Grid.RowSpan="3"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand"
+                        Source="ZivaDavid.jpg"
+                        WidthRequest="100" 
+                        HeightRequest="100" 
+                        Aspect="Fill" 
+                       
+                     
+                        />
+
+                    <StackLayout   Grid.Column="2"
+                                   Grid.Row="1" 
+                                   Grid.ColumnSpan="3"
+                                   HorizontalOptions="StartAndExpand" 
+                                   VerticalOptions="Center">
+                        <Label Text="NCIS Special Agent :" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                        <Label Text="Ziva David" HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="White" />
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="5"
+                                 
+                                 Grid.RowSpan="2"
+                                 HorizontalOptions="Center"
+                                 Grid.Row="2">
+                        <Label Text="3"
+                               FontAttributes="Bold"
+                               FontSize="20"
+                               HorizontalOptions="CenterAndExpand" 
+                               TextColor="White" >
+
+                        </Label>
+                        <Label Text="Ranking" 
+                               FontSize="10"  
+                               HorizontalOptions="Center" 
+                               TextColor="White" >
+
+                        </Label>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="2"
+                                 Spacing="0"
+                                 
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="2000" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            Text="Popularity">
+
+                        </Label>
+
+                    </StackLayout>
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="3"
+                                 Spacing="0"
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="2000" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            HorizontalOptions="Center"
+                            Text="Likes">
+
+                        </Label>
+
+                    </StackLayout>
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="4"
+                                 Spacing="0"
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="200" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            Text="Followed">
+
+                        </Label>
+
+                    </StackLayout>
+
+                </Grid>
+
+            </yummy:PancakeView>
+            <yummy:PancakeView 
+                Grid.Row="4"
+        BorderIsDashed="True"
+        BorderThickness="4" 
+        CornerRadius="0,30,30,0"
+        HorizontalOptions="FillAndExpand" 
+        HeightRequest="140">
+                <Grid Grid.Row="0" BackgroundColor="#ac7cf4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <abstractions:CircleImage 
+                       
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Grid.RowSpan="3"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand"
+                        Source="timmagge.jpg"
+                        WidthRequest="100" 
+                        HeightRequest="100" 
+                        Aspect="Fill" />
+
+                    <StackLayout   Grid.Column="2"
+                                   Grid.Row="1" 
+                                   Grid.ColumnSpan="3"
+                                   HorizontalOptions="StartAndExpand" 
+                                   VerticalOptions="Center">
+                        <Label Text="NCIS Special Agent :" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                        <Label Text="Tim McGee" HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="White" />
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="5"
+                                 
+                                 Grid.RowSpan="2"
+                                 HorizontalOptions="Center"
+                                 Grid.Row="2">
+                        <Label Text="4"
+                               FontAttributes="Bold"
+                               FontSize="20"
+                               HorizontalOptions="CenterAndExpand" 
+                               TextColor="White" >
+
+                        </Label>
+                        <Label Text="Ranking" 
+                               FontSize="10"  
+                               HorizontalOptions="Center" 
+                               TextColor="White" >
+
+                        </Label>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="2"
+                                 Spacing="0"
+                                 
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="2200" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            Text="Popularity">
+
+                        </Label>
+
+                    </StackLayout>
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="3"
+                                 Spacing="0"
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="900" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            HorizontalOptions="Center"
+                            Text="Likes">
+
+                        </Label>
+
+                    </StackLayout>
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="4"
+                                 Spacing="0"
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="1200" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            Text="Followed">
+
+                        </Label>
+
+                    </StackLayout>
+
+                </Grid>
+
+            </yummy:PancakeView>
+            <yummy:PancakeView 
+                Grid.Row="5"
+        BorderIsDashed="True"
+        BorderThickness="4" 
+        CornerRadius="0,30,30,0"
+        HorizontalOptions="FillAndExpand" 
+        HeightRequest="140">
+                <Grid Grid.Row="0" BackgroundColor="#68e1be">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <abstractions:CircleImage 
+                       
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Grid.RowSpan="3"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand"
+                        Source="abbby.jpg"
+                        WidthRequest="100" 
+                        HeightRequest="100" 
+                        Aspect="Fill" 
+                       
+                     
+                        />
+
+                    <StackLayout   Grid.Column="2"
+                                   Grid.Row="1" 
+                                   Grid.ColumnSpan="3"
+                                   HorizontalOptions="StartAndExpand" 
+                                   VerticalOptions="Center">
+                        <Label Text="NCIS Special Agent :" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                        <Label Text="Abby Sciuto " HorizontalOptions="StartAndExpand" VerticalOptions="Center" TextColor="White" />
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="5"
+                                 
+                                 Grid.RowSpan="2"
+                                 HorizontalOptions="Center"
+                                 Grid.Row="2">
+                        <Label Text="5"
+                               FontAttributes="Bold"
+                               FontSize="20"
+                               HorizontalOptions="CenterAndExpand" 
+                               TextColor="White" >
+
+                        </Label>
+                        <Label Text="Ranking" 
+                               FontSize="10"  
+                               HorizontalOptions="Center" 
+                               TextColor="White" >
+
+                        </Label>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="2"
+                                 Spacing="0"
+                                 
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="6600" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            Text="Popularity">
+
+                        </Label>
+
+                    </StackLayout>
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="3"
+                                 Spacing="0"
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="2880" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            HorizontalOptions="Center"
+                            Text="Likes">
+
+                        </Label>
+
+                    </StackLayout>
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="4"
+                                 Spacing="0"
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="800" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            Text="Followed">
+
+                        </Label>
+
+                    </StackLayout>
+
+                </Grid>
+
+            </yummy:PancakeView>
+
+            <yummy:PancakeView 
+                Grid.Row="6"
+        BorderIsDashed="True"
+        BorderThickness="4" 
+        CornerRadius="0,30,30,0"
+        HorizontalOptions="FillAndExpand" 
+        HeightRequest="140">
+                <Grid Grid.Row="0" BackgroundColor="#d265f4">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <abstractions:CircleImage 
+                       
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        Grid.RowSpan="3"
+                        VerticalOptions="Center" 
+                        HorizontalOptions="StartAndExpand"
+                        Source="Donald_Mallard.jpg"
+                        WidthRequest="100" 
+                        HeightRequest="100" 
+                        Aspect="Fill" 
+                       
+                     
+                        />
+
+                    <StackLayout   Grid.Column="2"
+                                   Grid.Row="1" 
+                                   Grid.ColumnSpan="3"
+                                   HorizontalOptions="StartAndExpand" 
+                                   VerticalOptions="Center">
+                        <Label Text="Chief Medical Examiner:" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+                        <Label Text="Donald Ducky Mallard" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White" />
+
+                    </StackLayout>
+
+                    <StackLayout Grid.Column="5"
+                                 
+                                 Grid.RowSpan="2"
+                                 HorizontalOptions="Center"
+                                 Grid.Row="2">
+                        <Label Text="6"
+                               FontAttributes="Bold"
+                               FontSize="20"
+                               HorizontalOptions="CenterAndExpand" 
+                               TextColor="White" >
+
+                        </Label>
+                        <Label Text="Ranking" 
+                               FontSize="10"  
+                               HorizontalOptions="Center" 
+                               TextColor="White" >
+
+                        </Label>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="2"
+                                 Spacing="0"
+                                 
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="2000" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            Text="Popularity">
+
+                        </Label>
+
+                    </StackLayout>
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="3"
+                                 Spacing="0"
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="2000" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            HorizontalOptions="Center"
+                            Text="Likes">
+
+                        </Label>
+
+                    </StackLayout>
+                    <StackLayout Grid.Row="3"
+                                 Grid.Column="4"
+                                 Spacing="0"
+                                 HorizontalOptions="StartAndExpand"
+                                 
+                                 Orientation="Vertical">
+                        <Label Text="200" 
+                                HorizontalOptions="Center"
+                               TextColor="White">
+                        </Label>
+                        <Label 
+                            FontSize="10"
+                            TextColor="White" 
+                            Text="Followed">
+
+                        </Label>
+
+                    </StackLayout>
+
+                </Grid>
+
+            </yummy:PancakeView>
+        </Grid>
+    </ScrollView>
+</ContentPage>
